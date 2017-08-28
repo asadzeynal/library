@@ -17,4 +17,4 @@ I have EJB facade classes inheriting from AbstractFacade. Such a structure, in m
 In the implementation methods I used Criteria Queries instead building sql queries myself. This is because the queries are quite simple. In create method transaction is used because these method changes data (adds it).
 The EJB session classes are not used directly. Instead I created two service classes marked by WebService annotation, that are the interface that is an endpoint for the interaction with the system.
 Also there is a Converter class to convert java 8 LocalDate to sql.date and vice-versa. The system uses Derby db and the persistence provider is pure eclipselink without Hibernate.
-I also had an idea to use spring, but decided not to do it, until I do not clearly understand the use-cases of this framework
+I also had an idea to use spring, but decided not to do it, until I clearly understand the use-cases of this framework
